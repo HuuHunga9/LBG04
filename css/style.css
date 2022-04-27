@@ -7569,7 +7569,8 @@ textarea {
 
 .c-box__img__big--type01 .c-box__before-after:after,
 .c-box__img__big--type01 .c-box__before-after:before {
-    font-size: 1.1875rem
+    font-size: 1.1875rem;
+    color: #222;
 }
 
 .c-box__img__big--type01 .c-infor .c-name p {
