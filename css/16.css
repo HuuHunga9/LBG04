@@ -1,0 +1,37 @@
+.recentcomments a {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+}
+
+#bang-gia,
+#quy-trinh,
+#khach-hang,
+#tai-sao,
+#cac-loai,
+#truong-hop,
+#loi-ich {
+    padding-top: 50px !important;
+}
+
+.c-banner__page--type01 {
+    margin-top: 90px;
+}
+
+.banner-left {
+    padding: 1.2rem;
+}
+
+.btn-button {}
+
+div#toc_container ul li {
+    font-size: 14px;
+}

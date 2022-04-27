@@ -1,0 +1,219 @@
+.al_ct {
+    text-align: center;
+}
+
+.img_circle {
+    display: block;
+    border-radius: 50%;
+    background: #ffbe00;
+    padding: 2px;
+}
+
+.ico {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ico-linkedin {
+    background-image: url('../images/icon-linkedin.png');
+}
+
+.ico-face-yel {
+    background-image: url('../images/icon-face-yel.png');
+}
+
+.ico-info {
+    background-image: url('../images/icon-info.png');
+}
+
+.lnk_img {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    color: transparent;
+}
+
+.post_meta {
+    margin: 15px 0;
+}
+
+.post_meta>.c-label--date,
+.post_meata>span {
+    display: inline-block;
+    margin: 0 1.2rem 0 0;
+    vertical-align: middle;
+}
+
+.meta_doctor {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 15px 0 0;
+}
+
+.doctor_title {
+    cursor: pointer;
+}
+
+.doctor-thumb {
+    max-width: 49px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+.doctor-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #112ec8;
+    margin: 0 0 0 1.3rem;
+    font-weight: 700;
+}
+
+.doctor-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    padding: 25px 0 0;
+    width: 300px;
+}
+
+.meta_doctor:hover>.doctor-info {
+    display: block;
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+}
+
+.doctor-info:before {
+    content: '';
+    display: block;
+    border-bottom: 32px solid #ebebeb;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    position: absolute;
+    z-index: 9;
+    top: 2px;
+    left: 30%;
+}
+
+.doctor-content {
+    background: #ebebeb;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    box-shadow: 1px 1px 2px 1px #e6e4e4;
+}
+
+.doctor-img {
+    display: inline-block;
+    max-width: 77px;
+    margin: 10px 0 5px;
+    padding: 4px;
+}
+
+.docker-name {
+    text-align: center;
+    margin: 10px 0 15px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: 1.8;
+    font-family: "UTM-Avo-Bold", sans-serif;
+    color: #112ec8;
+}
+
+.lst_star>li {
+    position: relative;
+    padding: 0 0 0 24px;
+    min-height: 20px;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.lst_star>li:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon-star-yel.png')no-repeat center;
+}
+
+.doctor_ft {
+    margin: 10px auto 0;
+    width: 86%;
+    border-top: 1px solid #ffbe00;
+    padding: 13px 0 0;
+    text-align: center;
+    font-family: "UTM-Avo-Bold", sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.doctor_ft>span {
+    display: inline-block;
+    margin: 0 3px;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
+.dcma {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dmca-badge img {
+    width: 72px;
+    display: block;
+    margin: 0 0 0 15px;
+}
+
+.c-footer__copyright .dcma p {
+    color: #002bc8;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+
+/*animation*/
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

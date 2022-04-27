@@ -1,0 +1,104 @@
+.comments-rating {
+    border: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.comments-rating label {
+    display: inline-block;
+}
+
+.rating-container {
+    /* remove inline-block whitespace */
+    font-size: 0;
+    /* flip the order so we can use the + and ~ combinators */
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: flex;
+}
+
+.rating-container * {
+    font-size: 1.4rem;
+}
+
+.rating-container>input {
+    display: none;
+}
+
+.rating-container>input+label,
+.ol_star-ite {
+    /* only enough room for the star */
+    font-family: "dashicons";
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 9999px;
+    width: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0;
+}
+
+.rating-container>input+label:before,
+.ol_star-ite:before {
+    display: inline-block;
+    text-indent: -9999px;
+    content: "\f154";
+    color: #717171;
+}
+
+.rating-container>input:checked~label:before,
+.rating-container>input+label:hover~label:before,
+.rating-container>input+label:hover:before {
+    content: "\f155";
+    color: #d4aa51;
+    text-shadow: 0 0 1px #333;
+}
+
+.rating-container>.star-cb-clear+label {
+    text-indent: -9999px;
+    width: 0.5em;
+    margin-left: -0.5em;
+}
+
+.rating-container>.star-cb-clear+label:before {
+    width: 0.5em;
+}
+
+.rating-container:hover>input+label:before,
+.ol_star-ite:before {
+    content: "\f154";
+    color: #717171;
+    text-shadow: none;
+}
+
+.rating-container:hover>input+label:hover~label:before,
+.rating-container:hover>input+label:hover:before,
+.ol_star-ite.ol_star-yel:before {
+    content: "\f155";
+    color: #d4aa51;
+    text-shadow: 0 0 1px #333;
+}
+
+.comment-respond .rating-container>.star-cb-clear+label,
+.comment-respond .rating-container>input+label:before {
+    text-indent: 9999px;
+}
+
+.comment-respond .rating-container>input+label {
+    text-indent: -9999px;
+}
+
+.ol_star-ite {
+    font-size: 15px;
+}
+
+.ol_star-result {
+    display: inline-block;
+    margin: 3px 0 0;
+}
+
+.c-hd>.c-title {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
+}
